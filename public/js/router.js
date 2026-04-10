@@ -14,7 +14,6 @@ const SwipeRouter = (() => {
 
   function init() {
     container = document.getElementById('swipe-container');
-
     pages.forEach((page, i) => {
       const slot = document.createElement('div');
       slot.className = 'swipe-page';
@@ -22,6 +21,9 @@ const SwipeRouter = (() => {
       slot.dataset.index = i;
       container.appendChild(slot);
     });
+
+    // ← adicionar esta linha
+    container.style.width = `${pages.length * 100}vw`;
 
     _goTo(0, false);
     _bindTouch();
