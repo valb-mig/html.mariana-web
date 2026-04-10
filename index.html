@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Com todo amor Mariana ♡</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Dancing+Script:wght@400;600&family=Nunito:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="public/css/main.css" />
+</head>
+<body>
+
+  <canvas id="particles-canvas"></canvas>
+  <div id="petals-container"></div>
+
+  <section id="intro" class="intro-screen">
+    <div class="envelope-wrap" id="envelope-wrap">
+      <div class="envelope" id="envelope">
+        <div class="env-flap" id="env-flap"></div>
+        <div class="env-body">
+          <div class="env-seal" id="env-seal">♡</div>
+        </div>
+        <div class="letter-card" id="letter-card">
+          <div class="letter-inner">
+            <span class="letter-rose">🌸</span>
+            <h1 class="intro-title">Para Mariana</h1>
+            <p class="intro-subtitle">com todo o meu amor</p>
+            <button class="enter-btn" id="enter-btn">
+              <span>Abrir com carinho</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div id="main-site" class="hidden">
+    <div class="swipe-container" id="swipe-container"></div>
+  </div>
+
+  <div id="memory-modal" class="memory-modal hidden">
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modal-close">✕</button>
+      <img id="modal-img" src="" alt="" />
+      <div class="modal-caption">
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <span id="modal-date" class="modal-date"></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="public/js/config.js"></script>
+  <script src="public/js/api.js"></script>
+  <script src="public/js/particles.js"></script>
+  <script src="public/js/petals.js"></script>
+  <script src="public/js/poems.js"></script>
+  <script src="public/js/memories.js"></script>
+  <script src="public/js/router.js"></script>
+  <script src="public/js/app.js"></script>
+</body>
+</html>
